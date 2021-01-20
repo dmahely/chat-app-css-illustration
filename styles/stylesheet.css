@@ -1,7 +1,56 @@
+:root {
+  --pale-violet: hsl(276, 100%, 81%);
+  --moderate-violet: hsl(276, 55%, 52%);
+  --dark-violet: hsl(271, 15%, 43%);
+  --grayish-blue: hsl(206, 6%, 79%);
+  --very-dark-violet: hsl(271, 36%, 24%);
+  --grayish-violet: hsl(270, 7%, 64%);
+}
+
+body {
+  font: 16px "Rubik", sans-serif;
+}
+
+.main_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main__text_container {
+  margin-top: 30vh;
+}
+
+.text__heading {
+  color: var(--very-dark-violet);
+  font-weight: 500;
+}
+
+.text__description {
+  color: var(--grayish-violet);
+  opacity: 0.8;
+  line-height: 1.5;
+  text-align: center;
+  width: 65%;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Screens bigger than 500px */
+@media screen and (min-width: 500px) {
+  .text__description {
+    text-align: center;
+  }
+}
+
+/* Screens bigger than 750px */
+@media screen and (min-width: 750px) {
+  .text__description {
+    text-align: left;
+  }
 }
