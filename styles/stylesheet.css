@@ -9,20 +9,31 @@
 
 body {
   font: 16px "Rubik", sans-serif;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+  min-height: 100vh;
+  padding: 24px;
 }
 
 .main_container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  flex: 1;
 }
 
 .main__text_container {
   margin-top: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .text__heading {
   color: var(--very-dark-violet);
   font-weight: 500;
+  text-align: center;
 }
 
 .text__description {
@@ -30,7 +41,7 @@ body {
   opacity: 0.8;
   line-height: 1.5;
   text-align: center;
-  width: 65%;
+  max-width: 450px;
 }
 
 .attribution {
@@ -43,14 +54,19 @@ body {
 
 /* Screens bigger than 500px */
 @media screen and (min-width: 500px) {
-  .text__description {
+  .text__heading {
     text-align: center;
   }
 }
 
 /* Screens bigger than 750px */
 @media screen and (min-width: 750px) {
-  .text__description {
+  .text__description, .text__heading {
+    align-self: start;
     text-align: left;
+  }
+
+  .main_container {
+    grid-template-columns: 1fr 1fr;
   }
 }
