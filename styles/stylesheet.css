@@ -80,6 +80,80 @@ body {
   max-width: 450px;
 }
 
+.main__phone_container {
+  border: 1px solid var(--white);
+  border-radius: 10%;
+  padding: 30px;
+  background-color: var(--white);
+  max-width: 450px;
+}
+
+.phone__inner_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--light-grayish-violet);
+}
+
+.phone__camera {
+  background-color: var(--white);
+  width: 200px;
+  height: 30px;
+  border-radius: 48px;
+  margin-top: -10px;
+  align-self: center;
+  color: var(--white); /* Hack to hide dot */
+}
+
+.phone__header {
+  background: linear-gradient(45deg, var(--light-violet), var(--light-magenta));
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.header__inner_container {
+  display: flex;
+  padding: 20px;
+  flex-direction: row;
+  color: var(--white);
+  align-items: center;
+}
+
+.header__back,
+.header__menu {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.contact__name,
+.contact__status {
+  display: block; /* To get them on separate lines */
+}
+
+.contact__status {
+  opacity: 0.5;
+  margin-top: 3px;
+  font-size: 12px;
+}
+
+.header__avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--white);
+}
+
+.header__left_container {
+  display: flex;
+  flex: 1; /* So it takes the most space */
+  justify-content: space-around;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header__left_container > * {
+  margin: 0 7px; /* To add spacing between header elements */
+}
 .attribution {
   font-size: 11px;
   text-align: center;
