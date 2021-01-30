@@ -200,6 +200,31 @@ body {
   width: 75px;
 }
 
+.conversation__walk_option {
+  display: flex;
+  flex-direction: row;
+  color: var(--white);
+  background: linear-gradient(45deg, var(--light-magenta), var(--light-violet));
+  max-width: 250px;
+  border-bottom-right-radius: 20px;
+  justify-content: flex-start;
+}
+
+.walk_option__description {
+  flex: 1;
+}
+
+.walk_option__option {
+  margin-right: 15px;
+  line-height: 1.5; /* To push circle down */
+}
+
+.walk_option__price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
