@@ -9,6 +9,7 @@
   --light-violet: hsl(264, 100%, 61%);
   --light-grayish-violet: hsl(270, 20%, 96%);
   --white: hsl(0, 0%, 100%);
+  --very-light-magenta: hsl(289, 100%, 72%);
 }
 * {
   box-sizing: border-box;
@@ -18,7 +19,7 @@ body {
   font: 16px "Rubik", sans-serif;
   margin: 0;
   min-height: 100vh;
-  background-color: var(--white);
+  background-color: var(--light-grayish-violet);
   overflow: hidden; /* To hide horizontal scrollbar of bottom background */
 }
 
@@ -32,7 +33,6 @@ body {
 .main_container {
   display: grid;
   grid-template-columns: 1fr;
-  flex: 1;
 }
 
 .top_background {
@@ -162,6 +162,7 @@ body {
   padding: 10px;
   font-size: 14px;
   background-color: var(--light-grayish-violet);
+  border-radius: 0 0 20px 20px;
 }
 
 .conversation__sent_message {
@@ -223,6 +224,30 @@ body {
   font-size: 18px;
   font-weight: bold;
   margin-right: 5px;
+}
+
+.conversation__text_box {
+  border-radius: 500px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  align-items: center;
+}
+
+.text_box__placeholder {
+  color: var(--grayish-blue);
+  flex: 1;
+  margin-left: 15px;
+}
+
+.text_box__submit {
+  background-color: var(--very-dark-violet);
+  color: var(--white);
+  border-radius: 50%;
+  border: 1px solid var(--very-light-magenta);
+  padding: 8px;
+  font-weight: bold;
 }
 
 .attribution {
