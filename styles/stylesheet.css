@@ -85,8 +85,10 @@ body {
   border-radius: 50px;
   padding: 20px;
   background-color: var(--white);
-  max-width: 450px;
-  /* Add box shadow */
+  max-width: 350px;
+  box-shadow: 14px 22px 35px 1px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 14px 22px 35px 1px rgba(0,0,0,0.25);
+  -moz-box-shadow: 14px 22px 35px 1px rgba(0,0,0,0.25);
 }
 
 .phone__inner_container {
@@ -96,7 +98,7 @@ body {
 
 .phone__camera {
   background-color: var(--white);
-  width: 200px;
+  width: 50%;
   height: 35px;
   border-radius: 48px;
   margin-top: -15px;
@@ -113,7 +115,7 @@ body {
 
 .header__inner_container {
   display: flex;
-  padding: 20px;
+  padding: 15px;
   flex-direction: row;
   color: var(--white);
   align-items: center;
@@ -158,9 +160,9 @@ body {
 .phone__conversation {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 10px;
+  grid-gap: 5px;
   padding: 10px;
-  font-size: 14px;
+  font-size: 11px;
   background-color: var(--light-grayish-violet);
   border-radius: 0 0 20px 20px;
 }
@@ -173,12 +175,14 @@ body {
 
 /* Shared between sent and received chat bubbles */
 .conversation__bubble {
-  max-width: 220px;
+  max-width: 65%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  padding: 15px;
+  padding: 10px;
   max-height: 100px;
-  /* Add box shadow */
+  box-shadow: 14px 22px 35px -31px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 14px 22px 35px -31px rgba(0,0,0,0.25);
+  -moz-box-shadow: 14px 22px 35px -31px rgba(0,0,0,0.25);
 }
 
 .conversation__received_message {
@@ -206,12 +210,14 @@ body {
   flex-direction: row;
   color: var(--white);
   background: linear-gradient(45deg, var(--light-magenta), var(--light-violet));
-  max-width: 250px;
+  max-width: 75%;
   border-bottom-right-radius: 20px;
   justify-content: flex-start;
+  padding: 8px;
 }
 
 .walk_option__description {
+  align-self: center;
   flex: 1;
 }
 
@@ -223,15 +229,14 @@ body {
 .walk_option__price {
   font-size: 18px;
   font-weight: bold;
-  margin-right: 5px;
+  margin-right: 15px;
 }
 
 .conversation__text_box {
-  border-radius: 500px;
+  border-radius: 50px;
   background-color: var(--white);
   display: flex;
-  flex-direction: row;
-  padding: 15px;
+  padding: 5px;
   align-items: center;
 }
 
@@ -245,9 +250,9 @@ body {
   background-color: var(--very-dark-violet);
   color: var(--white);
   border-radius: 50%;
+  display: flex; /* to get the round shape */
   border: 1px solid var(--very-light-magenta);
-  padding: 8px;
-  font-weight: bold;
+  padding: 7px;
 }
 
 .attribution {
