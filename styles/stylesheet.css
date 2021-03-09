@@ -50,7 +50,8 @@ body {
 .bottom_background {
   width: 500px;
   height: 600px;
-  background-color: var(--light-grayish-violet);
+  background-color: var(--grayish-blue);
+  opacity: 0.1;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   position: absolute;
@@ -268,28 +269,31 @@ body {
   .text__heading {
     text-align: center;
   }
+
+  body {
+    overflow: visible;
+  }
 }
 
-/* Screens bigger than 750px */
-@media screen and (min-width: 750px) {
-  .text__description,
+/* Screens bigger than 900px */
+@media screen and (min-width: 900px) {
   .text__heading {
-    align-self: start;
-    text-align: left;
+    text-align: center;
   }
-
+  
   .main_container {
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
   }
 }
 
-/* Screens bigger than 1000px */
-@media screen and (min-width: 1000px) {
+/* Screens bigger than 1100px */
+@media screen and (min-width: 1100px) {
   .top_background {
     top: 0;
     left: -80px;
   }
-
+  
   .bottom_background {
     bottom: 0;
     right: -150px;
