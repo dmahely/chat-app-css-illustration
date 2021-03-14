@@ -279,7 +279,7 @@ body {
   }
 
   body {
-    overflow: visible;
+    overflow-y: visible;
   }
 
   .main_container {
