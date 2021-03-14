@@ -216,7 +216,7 @@ body {
   border-bottom-right-radius: 10px;
   justify-content: flex-start;
   border-bottom-left-radius: 3px;
-  padding: 8px;
+  padding: 10px;
 }
 
 .walk_option__description {
@@ -227,6 +227,10 @@ body {
 .walk_option__option {
   margin-right: 15px;
   line-height: 1.5; /* To push circle down */
+}
+
+.walk_option__option_icon {
+  opacity: 0.5;
 }
 
 .walk_option__price {
@@ -312,5 +316,9 @@ body {
   .bottom_background {
     bottom: 0;
     right: -150px;
+  }
+
+  .main__phone_container {
+    justify-self: end;
   }
 }
