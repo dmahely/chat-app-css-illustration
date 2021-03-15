@@ -273,6 +273,13 @@ body {
   margin-left: 1px;
 }
 
+/* Screens smaller than 500 */
+@media screen and (max-width: 499px) {
+  .main_container {
+    justify-items: center;
+  }
+}
+
 /* Screens bigger than 500px */
 @media screen and (min-width: 500px) {
   .text__heading {
